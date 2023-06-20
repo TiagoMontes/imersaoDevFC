@@ -4,7 +4,7 @@ type OrderType string
 
 const (
     BUY OrderType = "BUY"
-    SELL = "SELL"
+    SELL OrderType = "SELL"
 )
 
 type Order struct {
