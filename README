@@ -1,0 +1,12 @@
+Opa! Beleza?
+
+Pra você poder subir o código, precisa primeiro configurar o Docker no seu /etc/extra_hosts
+
+1 - Acesse por nano o arquivo através do seguinte comando
+    - sudo nano /etc/hosts
+
+2 - Depois de acessar, adicione o seguinte código
+    - 127.0.0.1 kubernets.docker.internal host.docker.internal
+
+Depois disso, aperte Ctrl + X e confirme as alterações. Agora é só rodar com o comando no terminal
+  - sudo docker compose up -d
