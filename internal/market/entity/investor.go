@@ -6,6 +6,11 @@ type Investor struct {
 	AssetPosition[]*InvestorAssetPosition //Lembre-se de ponteiros depois
 }
 
+type InvestorAssetPosition struct {
+	AssetID string
+	Shares int
+}
+
 func NewInvestor(id string) *Investor {
 	return &Investor{
 		ID: id,
@@ -33,11 +38,6 @@ func (i *Investor) GetAssetPosition(assetID string) *InvestorAssetPosition {
 		}
 	}
 	return nil
-}
-
-type InvestorAssetPosition struct {
-	AssetID string
-	Shares int
 }
 
 func NewInvestorAssetPosition(assetID string, shares int) *InvestorAssetPosition {
