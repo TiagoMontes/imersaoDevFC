@@ -8,15 +8,15 @@ const (
 )
 
 type Order struct {
-	ID string
-	Investor *Investor //esse é nosso investor de investor.go
-	Asset *Asset //esse é nosso Asset de asset.go
-	Shares int
-	PendingShares int
-	Price float64
-	OrderType OrderType
-	Status string
-	Transactions []*Transaction
+	ID 				string
+	Investor 		*Investor //esse é nosso investor de investor.go
+	Asset 			*Asset //esse é nosso Asset de asset.go
+	Shares 			int
+	PendingShares 	int
+	Price 			float64
+	OrderType 		OrderType
+	Status 			string
+	Transactions 	[]*Transaction
 }
 
 func NewOrder(orderID string, investor *Investor, asset *Asset, shares int, price float64, orderType OrderType) *Order{

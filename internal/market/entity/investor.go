@@ -1,14 +1,14 @@
 package entity
 
 type Investor struct {
-	ID string
-	Name string
-	AssetPosition[]*InvestorAssetPosition //Lembre-se de ponteiros depois
+	ID 				string
+	Name 			string
+	AssetPosition	[]*InvestorAssetPosition //Lembre-se de ponteiros depois
 }
 
 type InvestorAssetPosition struct {
-	AssetID string
-	Shares int
+	AssetID 	string
+	Shares 		int
 }
 
 func NewInvestor(id string) *Investor {
